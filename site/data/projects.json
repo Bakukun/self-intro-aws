@@ -1,0 +1,18 @@
+[
+  {
+    "title": "꾸욱",
+    "summary": "소비 기록과 저축 목표를 관리하는 충동구매 억제 앱",
+    "overview": "소비할 때 느낀 감정을 기록하고, 저축 목표와 소비 통계를 확인하는 웹 애플리케이션입니다.",
+    "role": "Spring Boot로 사용자, 저축 목표, 감정별 소비 기록 API를 구현하고 MySQL 연동과 Postman 요청을 확인했습니다.",
+    "stack": ["Java", "Spring Boot", "JPA", "MySQL"],
+    "repository": ""
+  },
+  {
+    "title": "Java 슈팅 게임",
+    "summary": "업적, 사운드, 보스 전투를 개발한 팀 프로젝트",
+    "overview": "적의 공격을 피하고 스테이지를 진행하는 Java 기반 2D 슈팅 게임입니다.",
+    "role": "업적 달성 조건과 알림을 구현하고, 사운드 관리와 보스 탄막 패턴 작업에 참여했습니다.",
+    "stack": ["Java", "Maven", "Git"],
+    "repository": "https://github.com/Fusili23/Invaders-SDP-23292"
+  }
+]

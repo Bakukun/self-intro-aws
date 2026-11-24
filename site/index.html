@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="한원빈의 클라우드·백엔드 개발 포트폴리오">
+  <title>한원빈 | 개발 포트폴리오</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#home">HAN WONBEEN</a>
+    <nav aria-label="주 메뉴">
+      <a href="#about">소개</a><a href="#projects">프로젝트</a>
+      <a href="#contact">연락처</a><a href="#guestbook">방명록</a>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="hero">
+      <p class="label">CLOUD / BACKEND DEVELOPMENT</p>
+      <h1>안녕하세요, <span>한원빈</span>입니다.</h1>
+      <p>한양대학교 ERICA 컴퓨터학부에서 백엔드 개발과 클라우드 인프라를 공부하고 있습니다.</p>
+      <a class="button" href="#projects">프로젝트 보기 <span aria-hidden="true">↓</span></a>
+    </section>
+    <section id="about">
+      <h2>소개</h2>
+      <p>Java와 Spring Boot로 웹 API를 개발하고, MySQL과 PostgreSQL로 데이터를 다뤘습니다. AWS 실습에서는 S3와 RDS를 사용해 파일 저장과 데이터베이스 연결을 경험했습니다.</p>
+      <ul class="tags" aria-label="기술 스택">
+        <li>Java</li><li>Spring Boot</li><li>SQL</li><li>AWS</li>
+      </ul>
+    </section>
+    <section id="projects">
+      <h2>프로젝트</h2>
+      <p id="project-status" role="status"></p>
+      <div id="project-list" class="cards"></div>
+    </section>
+    <section id="contact">
+      <h2>연락처</h2>
+      <div class="actions">
+        <a class="button" href="https://github.com/Fusili23">GitHub 프로필 ↗</a>
+        <a id="email-link" class="button" hidden>이메일 보내기</a>
+        <button id="copy-email" type="button" hidden>이메일 복사</button>
+      </div>
+      <p id="email-address" hidden></p>
+      <p id="contact-status" role="status"></p>
+    </section>
+    <section id="guestbook">
+      <h2>방명록</h2>
+      <p>방명록은 AppSync 연결 후 이용할 수 있습니다.</p>
+      <form>
+        <fieldset disabled>
+          <label for="nickname">닉네임</label>
+          <input id="nickname" name="nickname" required minlength="1" maxlength="20">
+          <label for="message">메시지</label>
+          <textarea id="message" name="message" rows="3" required minlength="1" maxlength="200"></textarea>
+          <button type="submit">등록</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+  <footer>한원빈 · 개발 포트폴리오</footer>
+  <dialog id="project-dialog" aria-labelledby="detail-title">
+    <form method="dialog"><button class="close" autofocus>닫기</button></form>
+    <h2 id="detail-title"></h2>
+    <p id="detail-overview"></p>
+    <h3>담당 역할</h3>
+    <p id="detail-role"></p>
+    <h3>기술 스택</h3>
+    <ul id="detail-stack" class="tags"></ul>
+    <a id="detail-repo" href="" hidden>GitHub 저장소 ↗</a>
+  </dialog>
+</body>
+</html>

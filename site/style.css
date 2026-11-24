@@ -1,0 +1,43 @@
+:root {
+  color-scheme: dark;
+  font-family: system-ui, "Malgun Gothic", sans-serif;
+  color: #edf3f3;
+  background: #101719;
+  --line: #334246;
+  --muted: #b5c4c5;
+  --accent: #9ce7d2;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; line-height: 1.65; }
+a { color: var(--accent); text-underline-offset: .25em; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.top, main, footer { width: min(68rem, 100% - 3rem); margin-inline: auto; }
+.top, nav, .actions { display: flex; align-items: center; flex-wrap: wrap; gap: .8rem 1.4rem; }
+.top { justify-content: space-between; min-height: 5rem; padding-block: .75rem; border-bottom: 1px solid var(--line); }
+.top a { text-decoration: none; }
+.top nav a { color: var(--muted); }
+.brand, .label { font-family: ui-monospace, monospace; letter-spacing: .09em; color: var(--accent); }
+section { padding-block: 3rem; border-bottom: 1px solid var(--line); }
+.hero { padding-block: clamp(4rem, 11vw, 8rem); }
+h1, h2, h3 { line-height: 1.2; }
+h1 { font-size: clamp(2.25rem, 6.5vw, 5rem); letter-spacing: -.06em; margin: .6rem 0 1rem; word-break: keep-all; }
+h1 span { color: var(--accent); }
+h2 { font-size: clamp(1.4rem, 3vw, 2rem); margin-top: 0; }
+p { color: var(--muted); max-width: 65ch; }
+.hero .button { margin-top: .9rem; }
+.button, button { display: inline-block; background: transparent; border: 1px solid var(--accent); color: var(--accent); padding: .55rem .95rem; border-radius: .35rem; font: inherit; text-decoration: none; cursor: pointer; }
+.button:hover, button:hover:not(:disabled) { background: #213634; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); gap: 1rem; }
+.card { padding: 1.5rem; background: #192326; border: 1px solid var(--line); border-radius: .55rem; }
+.card h3 { margin-top: 0; }
+.tags { display: flex; flex-wrap: wrap; gap: .55rem; padding: 0; list-style: none; }
+.tags li { padding: .2rem .65rem; border: 1px solid var(--line); border-radius: 1rem; }
+fieldset { display: grid; gap: .45rem; border: 0; padding: 0; margin: 0; max-width: 30rem; }
+input, textarea { min-width: 0; font: inherit; border: 1px solid var(--line); background: #192326; color: inherit; padding: .45rem; }
+fieldset button { justify-self: start; margin-top: .4rem; }
+button:disabled { opacity: .55; cursor: default; }
+dialog { width: min(36rem, 100% - 2rem); padding: 1.75rem; background: #192326; color: inherit; border: 1px solid var(--line); border-radius: .65rem; }
+dialog::backdrop { background: #000b; }
+.close { float: right; margin: 0 0 .7rem .7rem; }
+footer { padding-block: 1.5rem; color: var(--muted); }
